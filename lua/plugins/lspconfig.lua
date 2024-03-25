@@ -25,7 +25,7 @@ return {
       servers = {
         pyright = {}, -- LSP for python
         taplo = {}, -- LSP for toml (for pyproject.toml files)
-        --ruff_lsp = {}, -- linter for python (includes flake8, pep8, etc.)
+        ruff_lsp = {}, -- linter for python (includes flake8, pep8, etc.)
       },
     },
   },
@@ -37,9 +37,9 @@ return {
     "stevearc/conform.nvim",
     opts = {
       formatters_by_ft = {
-        -- use black and ruff for python
+        -- use ruff for python
         python = {
-          { exe = "black" },
+          { "ruff_format" },
           { exe = "ruff", args = { "--fix" } },
         },
         -- use taplo for toml
@@ -60,6 +60,4 @@ return {
       },
     },
   },
-  -- Completion via nvim-cmp
-  -- - Confirm a completion with
 }
