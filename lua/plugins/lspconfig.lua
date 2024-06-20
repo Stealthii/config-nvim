@@ -26,6 +26,7 @@ return {
         pyright = {}, -- LSP for python
         taplo = {}, -- LSP for toml (for pyproject.toml files)
         ruff_lsp = {}, -- linter for python (includes flake8, pep8, etc.)
+        puppet = {}, -- LSP for puppet
       },
     },
   },
@@ -52,6 +53,8 @@ return {
         -- formats tresitter-injected code. Basically, this makes
         -- conform.nvim format python codeblocks inside a markdown file.
         markdown = { "inject" },
+        -- puppet?
+        puppet = { "puppet-lint" },
       },
       formatters = {
         shfmt = {
