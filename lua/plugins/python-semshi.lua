@@ -1,6 +1,7 @@
 return {
   -- "numiras/semshi",
   "wookayin/semshi", -- use a maintained fork
+  enabled = false, -- TODO: disable for now, broken with latest changes
   ft = "python",
   build = ":UpdateRemotePlugins",
   init = function()
