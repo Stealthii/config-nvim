@@ -5,3 +5,4 @@ local opt = vim.opt
 
 opt.shiftwidth = 4
 opt.relativenumber = false
+vim.g.lazyvim_python_lsp = "basedpyright"

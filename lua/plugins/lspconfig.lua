@@ -23,7 +23,7 @@ return {
     "neovim/nvim-lspconfig",
     opts = {
       servers = {
-        pyright = {}, -- LSP for python
+        basedpyright = {}, -- LSP for python
         taplo = {}, -- LSP for toml (for pyproject.toml files)
         ruff_lsp = {}, -- linter for python (includes flake8, pep8, etc.)
         puppet = {}, -- LSP for puppet
